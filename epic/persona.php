@@ -8,7 +8,7 @@
 	<body>
 		<h1>DATA DESIGN PROJECT</h1>
 		<h2>	USER PERSONA:</h2>
-		<img src="jits.jpg">
+		<img src="jits.jpg" alt="error" height="400" width="250">
 	</body>
 	<p>
 		Name: John Jones
