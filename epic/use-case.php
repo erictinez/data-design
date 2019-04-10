@@ -9,7 +9,7 @@
 		<p>As a new user, I want PayPal as a payment option</p>
 
 		<a href="persona.php">page 1</a>
-		<a href="user story.php">page 2</a>
+		<a href="user-story.php">page 2</a>
 
 	</body>
 </html>

@@ -15,7 +15,7 @@
 		</p>
 
 		<a href="persona.php">page 1</a>
-		<a href="use case.php">page 3</a>
+		<a href="use-case.php">page 3</a>
 
 	</body>
 </html>

@@ -29,7 +29,7 @@
 		Technical proficiency: 9
 	</p>
 
-	<a href="user story.php">page 2</a>
+	<a href="user-story.php">page 2</a>
 
 
 </html>
