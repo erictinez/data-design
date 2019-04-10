@@ -5,13 +5,9 @@
 		<title>Title</title>
 	</head>
 	<body>
+		<h1>Why is he using our site:</h1>
 		<p>
-			Why is he using our site?
-		</p>
-		<p>New to jiu jistu
-		</p>
-		<p>
-			Wants a new gi
+			Jeff is new to jiu jitsu and he wants to wear the latest style to class
 		</p>
 
 		<a href="persona.php">page 1</a>
