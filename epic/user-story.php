@@ -6,12 +6,11 @@
 	</head>
 	<body>
 		<h1>Why is he using our site:</h1>
-		<p>
-			Jeff is new to jiu jitsu and he wants to wear the latest style to class
-		</p>
+		<p>As a Reserve member, Anthony wants to purchase the Reserve Members special edition gi.</p>
 
-		<a href="persona.php">page 1</a>
-		<a href="use-case.php">page 3</a>
+		<a href="persona.php">Persona</a>
+		<a href="use-case.php">Use Case</a>
+		<a href="data-design ERD2.jpg">ERD</a>
 
 	</body>
 </html>
