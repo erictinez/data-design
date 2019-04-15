@@ -34,9 +34,17 @@
 			<ul>
 				<li>cartId(primary key)</li>
 				<li>cartUserId</li>
-				<li>cartShippingId</li>
 				<li>cartPhone</li>
 			</ul>
+		</div>
+		<div>
+			<strong>CART ITEM</strong>
+		</div>
+		<ul>
+			<li>cartItemcartId(foreign key)</li>
+			<li>cartItemItemId(foreign key)</li>
+			<li>cartItemSize</li>
+		</ul>
 		</div>
 		<div>
 			<strong>Relations</strong>
