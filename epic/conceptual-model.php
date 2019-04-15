@@ -11,7 +11,7 @@
 			<strong>Entities & Attributes</strong>
 		</div>
 			<div>
-		<strong>PROFILE</strong>
+		<strong>USER</strong>
 			</div>
 		<div>
 			<ul>
@@ -21,32 +21,29 @@
 				<li>userPhone</li>
 			</ul>
 		<div>
-			<strong>RESERVE MEMBER</strong>
+			<strong>ITEM</strong>
 		</div>
 			<ul>
-				<li>reservememberid(primary key)</li>
-				<li>reservememberFee</li>
+				<li>itemid(primary key)</li>
+				<li>manufacturer</li>
+				<li>material</li>
 			</ul>
 		<div>
-			<strong>ITEM TYPE</strong>
+			<strong>CART</strong>
 		</div>
 			<ul>
-				<li>itemtypeId(primary key)</li>
-				<li>itmetypeColor</li>
-				<li>itemtypeGi</li>
-				<li>itemtypeHoodie</li>
-				<li>itemtypeSize</li>
-				<li>itemtypeHat</li>
-				<li>itemtypeShorts</li>
-				<li>itemtypeRashGuard</li>
+				<li>cartId(primary key)</li>
+				<li>cartUserId</li>
+				<li>cartShippingId</li>
+				<li>cartPhone</li>
 			</ul>
 		</div>
 		<div>
 			<strong>Relations</strong>
 			<div>
 				<ul>
-					<li>One<strong> User</strong> can become one <strong> Reserve Member - (1 to 1)</strong></li>
-					<li>One<strong> Reserve Members</strong> can purchase <strong> many <strong> Items - (1 to m)</strong></strong></li>
+					<li>One<strong> user</strong> can have <strong> many carts - (1 to m)</strong></li>
+					<li>One<strong> item</strong> can be <strong> in many carts <strong> Items - (m to m)</strong></strong></li>
 				</ul>
 			</div>
 
@@ -56,7 +53,7 @@
 		<a href="persona.php">Persona</a>
 		<a href="user-story.php">User Story</a>
 		<a href="use-case.php">Use Case</a>
-		<img src="data-design ERD.jpg" alt="ERD Model"/>
+		<img src="newERD.jpg" alt="ERD Model"/>
 	</body>
 
 
