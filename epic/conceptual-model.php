@@ -56,7 +56,7 @@
 		<a href="persona.php">Persona</a>
 		<a href="user-story.php">User Story</a>
 		<a href="use-case.php">Use Case</a>
-		<a href="data-design ERD.jpg">ERD</a>
+		<img src="data-design ERD.jpg" alt="ERD Model"/>
 	</body>
 
 

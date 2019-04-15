@@ -1,16 +1,32 @@
-drop table if exists bill;
-drop table if exists customer;
 
-create table customer (
-	customerId binary(16) not null,
-	customerFullName varchar(128),
-	index(customerFullName),
-	primary key (customerId)
+drop table if exists user ;
+drop table if exists reserveMember ;
+drop table if exists itemType ;
+
+create table user (
+	userId binary(16) not null,
+	userEmail varchar(64),
+	userAddress varchar(128),
+	userPhone varchar(16),
+	index(userId),
+	primary key (userId)
 );
 
-create table bill (
-   billId binary (16) not null,
-   billCustomerId binary(16) not null,
-   billStatus varchar(64),
-   primary key(billId),
-   foreign key(billCustomerId) references customer (customerId)
+create table reserveMember (
+	reserveMemberId  binary(16)  not null,
+	reserveMemberFee varchar(64) not null,
+	primary key (reserveMemberId)
+);
+
+create table itemType (
+	itemtypeId        BINARY(16)  not null,
+	itemtypeColor     VARCHAR(16) not null,
+	itemtypeGi        VARCHAR(16) not null,
+	itemtypeHoodie    VARCHAR(16) not null,
+	itemtypeSize      VARCHAR(16) not null,
+	itemtypeHat       VARCHAR(16) not null,
+	itemtypeShorts    VARCHAR(16) not null,
+	itemtypeRashGuard VARCHAR(16) not null,
+	primary key (itemTypeId),
+	foreign key (itemTypereserveMemberId) references reserveMember(reserveMemberId)
+);

@@ -28,6 +28,5 @@
 	<a href="user-story.php">User Story</a>
 		<a href="use-case.php">Use Case</a>
 		<a href="conceptual-model.php">ERD</a>
-		<a href="data-design ERD.jpg">ERD</a>
 	</body>
 </html>
