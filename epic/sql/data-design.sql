@@ -1,4 +1,5 @@
-
+alter database emartinez451 character set utf8 collate utf8_unicode_ci;
+set foreign_key_checks=0; drop table user; set foreign_key_checks=1;
 drop table if exists user ;
 drop table if exists reserveMember ;
 drop table if exists itemType ;
@@ -27,6 +28,7 @@ create table itemType (
 	itemtypeHat       VARCHAR(16) not null,
 	itemtypeShorts    VARCHAR(16) not null,
 	itemtypeRashGuard VARCHAR(16) not null,
+	itemTypereserveMemberId        BINARY(16)  not null,
 	primary key (itemTypeId),
 	foreign key (itemTypereserveMemberId) references reserveMember(reserveMemberId)
 );
