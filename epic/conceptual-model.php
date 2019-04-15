@@ -24,9 +24,9 @@
 			<strong>ITEM</strong>
 		</div>
 			<ul>
-				<li>itemid(primary key)</li>
-				<li>manufacturer</li>
-				<li>material</li>
+				<li>itemId(primary key)</li>
+				<li>itemManufacturer</li>
+				<li>itemMaterial</li>
 			</ul>
 		<div>
 			<strong>CART</strong>
