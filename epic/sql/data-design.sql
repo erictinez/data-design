@@ -1,6 +1,7 @@
-drop table if exists itemType ;
-drop table if exists user ;
-drop table if exists reserveMember ;
+drop table if exists cartItem;
+drop table if exists item;
+drop table if exists cart;
+drop table if	exists user;
 
 create table user (
 	userId binary(16) not null,
@@ -11,22 +12,46 @@ create table user (
 	primary key (userId)
 );
 
-create table reserveMember (
-	reserveMemberId  binary(16)  not null,
-	reserveMemberFee varchar(64) not null,
-	primary key (reserveMemberId)
+create table cart (
+	cartId  binary(16)  not null,
+	cartUserId binary(16) not null,
+	cartPhone varchar(16) not null,
+	index (cartUserId),
+	foreign key (cartUserId) references user(userId),
+	primary key (cartId)
 );
 
-create table itemType (
-	itemtypeId        binary(16)  not null,
-	itemtypeColor     varchar(16) not null,
-	itemtypeGi        varchar(16) not null,
-	itemtypeHoodie    varchar(16) not null,
-	itemtypeSize      varchar(16) not null,
-	itemtypeHat       varchar(16) not null,
-	itemtypeShorts    varchar(16) not null,
-	itemtypeRashGuard varchar(16) not null,
-	itemTypereserveMemberId        BINARY(16)  not null,
-	primary key (itemTypeId),
-	foreign key (itemTypereserveMemberId) references reserveMember(reserveMemberId)
+create table item (
+	itemId  binary(16)  not null,
+	itemManufacturer  varchar(16) not null,
+	itemMaterial  varchar(16) not null,
+	primary key (itemId)
 );
+
+create table cartItem (
+	cartItemCartId  binary(16)  not null,
+	cartItemItemId  binary(16) not null,
+	cartItemSize  varchar(64) not null,
+	index (cartItemCartId),
+	index (cartItemItemId),
+	foreign key (cartItemCartId) references cart(cartId),
+	foreign key (cartItemItemId) references item(itemId),
+	primary key (cartItemCartId, cartItemItemId)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
