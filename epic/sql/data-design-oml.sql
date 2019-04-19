@@ -22,7 +22,7 @@
 # 	WHERE user.userId = (UNHEX("4ad427d356d44644b85f961234baebbb"));
 
 
-
+# SELECT COUNT(tweetProfileId) FROM tweet WHERE tweetId = UNHEX("8ae5ccbe5c7242a28a3d0293ea4568ee");
 
 
 
